@@ -1,0 +1,19 @@
+{
+  "name": "gc-runners",
+  "version": "1.0.0",
+  "description": "A website for the Gold Coast Runners Inc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fnatical/gc-runners.git"
+  },
+  "author": "Damon Claverie | damonclaverie@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fnatical/gc-runners/issues"
+  },
+  "homepage": "https://github.com/Fnatical/gc-runners#readme"
+}
