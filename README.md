@@ -1,5 +1,4 @@
 # gc-runners
 
 A website for the Gold Coast Runners Club Inc.
-Created 2018.
-By DCC.
+DC | 2018 | damonclaverie@gmail.com
