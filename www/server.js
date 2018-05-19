@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, 'scripts/controllers')));
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.static(path.join(__dirname, 'node_modules/angular')));
 app.use(express.static(path.join(__dirname, 'node_modules/angular-route')));
+app.use(express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
