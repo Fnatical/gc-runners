@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Fnatical/gc-runners#readme",
   "dependencies": {
     "angular": "^1.6.10",
+    "angular-route": "^1.7.0",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3"

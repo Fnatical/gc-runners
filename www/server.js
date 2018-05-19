@@ -11,7 +11,10 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'scripts/controllers')));
+app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.static(path.join(__dirname, 'node_modules/angular')));
+app.use(express.static(path.join(__dirname, 'node_modules/angular-route')));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
