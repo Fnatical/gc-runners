@@ -5,19 +5,16 @@ const app        = express();
 const index      = require('./routes/index');
 
 
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'public/views'));
 app.set('view engine', 'ejs');
 
 app.engine('html', require('ejs').renderFile);
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'scripts/controllers')));
-app.use(express.static(path.join(__dirname, 'views')));
-app.use(express.static(path.join(__dirname, 'node_modules/angular')));
-app.use(express.static(path.join(__dirname, 'node_modules/angular-route')));
-app.use(express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')));
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+app.use(express.static(path.join(__dirname, 'node_modules')));
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use('/', index);
 

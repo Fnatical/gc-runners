@@ -3,10 +3,17 @@
 angular.module('gc-runners', ['ngRoute'])
 .config(function($routeProvider){
     $routeProvider
+
     .when('/contact', {
-        templateUrl : 'contact.html',
+        templateUrl : 'views/contact.html',
         controller  : 'ContactCtrl'
     })
+
+    .when('/about', {
+        templateUrl : 'views/about.html',
+        controller  : 'AboutCtrl'
+    })
+
     .otherwise({
         redirectTo: '/'
     });
